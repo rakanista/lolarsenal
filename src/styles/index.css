@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: all;
+}
+
+@keyframes rotate-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@font-face {
+  font-family: "BeaufortforLOL";
+  src: url("/fonts/BeaufortforLOL-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeaufortforLOL-Bold";
+  src: url("/fonts/BeaufortforLOL-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeaufortforLOL-Heavy";
+  src: url("/fonts/BeaufortforLOL-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Define no @theme do Tailwind v4 */
+@theme {
+  --font-shop-section: "BeaufortforLOL", sans-serif;
+  --font-shop-item: "BeaufortforLOL-Heavy", sans-serif;
+
+  /* Cores customizadas */
+  --color-lol-bg-dark: #010a13;
+  --color-lol-bg-medium: #0a1428;
+  --color-lol-card: #0d1b2a;
+  --color-lol-gold: #c8aa6e;
+  --color-lol-gold-dark: #463714;
+  --color-lol-cyan: #0bc6e3;
+  --color-lol-text: #c9c6bd;
+  --color-lol-white: #f0e6d2;
+  --color-lol-hover: #05403f;
+  --color-lol-selected: #785a28;
+  --color-lol-shop-border: #614c28;
+}
+
+@layer components {
+}
+
+/* Para os cards com brilho dourado no hover */
+.item-card:hover {
+  box-shadow: 0 0 20px rgba(200, 170, 110, 0.3);
+}
+
+/* Borda decorativa superior (aquele detalhe dourado) */
+.top-border {
+  border-top: 3px solid;
+  border-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      #c8aa6e 20%,
+      #c8aa6e 80%,
+      transparent 100%
+    )
+    1;
+}

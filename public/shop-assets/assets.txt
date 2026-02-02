@@ -1,0 +1,6 @@
+https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/ux/fonts/texticons/lol/statsicon/
+
+Runas: https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/perk-images/
+
+Ui Icons: https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-uikit/global/default/images/
+https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-postgame/global/default/
